@@ -85,15 +85,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white/70">
                 <FaMapMarkerAlt className="text-accent mt-1 shrink-0" />
-                <span>123 Wellness Avenue, Ayurvedic Care Building, Healthcare City, NY 10001</span>
+                <span>Behind Rama Bangles Store, Near Prajapita Brahmakumari Temple, Bhanapeth Ward, Kasturba Road, Chandrapur, Maharashtra 442402</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
                 <FaPhoneAlt className="text-accent shrink-0" />
-                <span>+1 (234) 567-8900</span>
+                <span>+91 9422839252</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
                 <FaEnvelope className="text-accent shrink-0" />
-                <span>info@tathastu.com</span>
+                <span>tathastuayurved08@gmail.com</span>
               </li>
             </ul>
           </div>
