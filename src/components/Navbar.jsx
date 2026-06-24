@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -52,6 +52,16 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="cursor-pointer bg-primary text-white hover:bg-primary-dark px-6 py-2.5 rounded-full font-semibold transition-colors shadow-md"
+          >
+            Book Appointment
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -88,6 +98,17 @@ const Navbar = () => {
                {link.name}
              </Link>
             ))}
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer bg-primary text-white hover:bg-primary-dark px-8 py-3 mt-2 rounded-full font-semibold transition-colors shadow-md"
+            >
+              Book Appointment
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
