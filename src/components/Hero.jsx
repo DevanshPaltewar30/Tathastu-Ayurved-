@@ -6,10 +6,10 @@ import doctorPhoto from '../assets/Doctor Photo.png';
 import logo from '../assets/logo.png';
 
 const stats = [
-  { icon: <FaUserMd className="text-3xl text-primary" />, value: '15+', label: 'Years Experience' },
-  { icon: <FaSmileBeam className="text-3xl text-primary" />, value: '10k+', label: 'Happy Patients' },
-  { icon: <FaHeartbeat className="text-3xl text-primary" />, value: '100%', label: 'Personalized Care' },
-  { icon: <FaLeaf className="text-3xl text-primary" />, value: 'Natural', label: 'Facilities' },
+  { icon: <FaUserMd className="text-xl text-primary" />, value: '15+', label: 'Years Experience' },
+  { icon: <FaSmileBeam className="text-xl text-primary" />, value: '10k+', label: 'Happy Patients' },
+  { icon: <FaHeartbeat className="text-xl text-primary" />, value: '100%', label: 'Personalized Care' },
+  { icon: <FaLeaf className="text-xl text-primary" />, value: 'Natural', label: 'Facilities' },
 ];
 
 const Hero = () => {
@@ -112,13 +112,13 @@ const Hero = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               key={index}
-              className="glass rounded-2xl p-6 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300"
+              className="glass rounded-xl p-4 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300"
             >
-              <div className="w-16 h-16 rounded-full bg-secondary-light/20 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-secondary-light/20 flex items-center justify-center mb-2">
                 {stat.icon}
               </div>
-              <h3 className="text-3xl font-bold text-primary-dark mb-1">{stat.value}</h3>
-              <p className="text-text-light font-medium text-sm">{stat.label}</p>
+              <h3 className="text-xl font-bold text-primary-dark mb-1">{stat.value}</h3>
+              <p className="text-text-light font-medium text-xs">{stat.label}</p>
             </motion.div>
           ))}
         </div>
