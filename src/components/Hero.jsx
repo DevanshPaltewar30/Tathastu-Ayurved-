@@ -9,7 +9,7 @@ const stats = [
   { icon: <FaUserMd className="text-lg sm:text-xl text-primary" />, value: '15+', label: 'Years Experience' },
   { icon: <FaSmileBeam className="text-lg sm:text-xl text-primary" />, value: 'Thousands', label: 'of Patients' },
   { icon: <FaHeartbeat className="text-lg sm:text-xl text-primary" />, value: '100%', label: 'Personalized Care' },
-  { icon: <FaLeaf className="text-lg sm:text-xl text-primary" />, value: 'Natural', label: 'Facilities' },
+  { icon: <FaLeaf className="text-lg sm:text-xl text-primary" />, value: 'Panchakarma', label: 'Facilities' },
 ];
 
 const Hero = () => {
@@ -114,11 +114,11 @@ const Hero = () => {
               key={index}
               className="glass rounded-xl p-2 sm:p-4 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300"
             >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary-light/20 flex items-center justify-center mb-1 sm:mb-2">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary-light/20 flex items-center justify-center mb-1 sm:mb-2 flex-shrink-0">
                 {stat.icon}
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-primary-dark mb-0.5 sm:mb-1">{stat.value}</h3>
-              <p className="text-text-light font-medium text-[10px] sm:text-xs leading-tight">{stat.label}</p>
+              <h3 className="text-[15px] sm:text-xl font-bold text-primary-dark mb-0.5 sm:mb-1 w-full break-words sm:break-normal">{stat.value}</h3>
+              <p className="text-text-light font-medium text-[10px] sm:text-xs leading-tight w-full break-words sm:break-normal">{stat.label}</p>
             </motion.div>
           ))}
         </div>
